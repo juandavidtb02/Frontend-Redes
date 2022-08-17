@@ -1,0 +1,26 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "description": "redes",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juandavidtb02/Frontend-Redes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juandavidtb02/Frontend-Redes/issues"
+  },
+  "homepage": "https://github.com/juandavidtb02/Frontend-Redes#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "hbs": "^4.2.0",
+    "http": "^0.0.1-security"
+  }
+}

@@ -1,5 +1,5 @@
-const url = "http://localhost:4000/api/users/uploadImage"
-const url2 = "http://localhost:4000/api/users/getImages"
+const url = "http://192.168.1.45/api/users/uploadImage"
+const url2 = "http://192.168.1.45/api/users/getImages"
 
 const btnUpload = document.querySelector('#upload');
 const imageResult = document.querySelector('#image');
