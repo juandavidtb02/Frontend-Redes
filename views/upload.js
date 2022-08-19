@@ -10,11 +10,21 @@ const errorImage = document.getElementById('errorImage');
 btnUpload.addEventListener('click', async e=>{
     e.preventDefault()
     const file = document.querySelector('#file').files[0];
-
+    //console.log(file.name)
+    
+    var allowedExtensions = /(.jpg|.jpeg|.png|.gif)$/i;
     const formData = new FormData();
     formData.append('file',file);
+    try{
+        if(!allowedExtensions.exec(file.name)){
+            error.innerHTML = "Only images are allowed, please try again! ";
+            return
+        }
+    }
+    catch(error){
+        console.log('No file chosen!')
+    }
     error.innerHTML = "Uploading file..."
-
     let response = await fetch(url,{
             method:'POST',
             body:formData
