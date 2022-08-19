@@ -6,10 +6,10 @@ import * as url from 'url';
 const app = express();
 app.use(express.json());
 //get, post, put, delete, patch
-const dirname = url.fileURLToPath(new URL('.', import.meta.url));
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 app.set('view engine', 'hbs');
 
-
+app.use('/views',express.static(__dirname+'/views'))
 app.get('/',(req,res)=> res.render('main'));
 
 const port = 8080

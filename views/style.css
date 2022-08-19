@@ -1,7 +1,35 @@
 body{
-    background-color: black;
+    /* background-color: black; */
 }
 
 img {
-    width: 400px;
+    width:350px;
+    height: 300px !important;
+}
+
+#header{
+    padding:30px;
+}
+
+#fileUpload{
+    padding:20px;
+}
+
+#error{
+    padding-left:20px;
+}
+
+.card{
+    display: inline-flex!important;
+    margin: 10px;
+}
+
+.card-body .btn{
+    display: inline-block;
+    margin: 10px;
+}
+
+#images-container{
+    display: flex;
+    justify-content: center;
 }
